@@ -1,0 +1,16 @@
+{
+    "students": [
+        {"id":64130500004, "name": "Kasidate Phlaiphueak"},
+        {"id":64130500990, "name": "John Does"},
+        {"id":64130500991, "name": "Somchai Jaidee"},
+        {"id":64130500992, "name": "Panupong Supaphon"}
+    ],
+    "courses":[
+        {"id":"INT201", "title":"Client-Side Web Programming I", "credit":2},
+        {"id":"INT202", "title":"Server-Side Web Programming I", "credit":2},
+        {"id":"INT203", "title":"Client-Side Web Programming II", "credit":2},
+        {"id":"INT204", "title":"Server-Side Web Programming II", "credit":2},
+        {"id":"INT207", "title":"Network I", "credit":3},
+        {"id":"INT208", "title":"Network II", "credit":2}
+    ]
+}

@@ -12,6 +12,13 @@ const playMusic = () => {
   if (isPlaying.value) musicControl.value.play()
   else musicControl.value.pause()
 }
+let nowPlayingMusic = ref(false)
+const selectMusic = () => {
+  nowPlayingMusic.value = !nowPlayingMusic.value
+  if(nowPlayingMusic.value) music.value = 'audio/background.mp3'
+  else music.value = "audio/sample.mp3"
+  musicControl.value.play()
+}
 onBeforeMount(() => {
   counter.value++
   console.log(`{App.vue} before mount... onBeforeMount() counter=[${counter.value}]`)
@@ -49,6 +56,7 @@ onUpdated(() => {
   </div>
   <audio :src="music" id="musicControl" ref="musicControl"></audio>
   <button @click="playMusic">{{ isPlaying?'pause': 'play' }}</button>
+  <button @click="selectMusic">change music</button>
 </template>
 
 <style scoped>
