@@ -1,5 +1,7 @@
 <script setup>
 import QuestionManagement from './components/QuestionManagement.vue'
+import {RouterView} from 'vue-router'
+import Nav from './components/nav.vue';
 </script>
 
 <template>
@@ -9,8 +11,9 @@ import QuestionManagement from './components/QuestionManagement.vue'
     >
       <h1>~ Question Management ~</h1>
     </div>
-
-    <QuestionManagement />
+  <Nav />
+  <RouterView />
+    <!-- <QuestionManagement /> -->
   </div>
 </template>
 

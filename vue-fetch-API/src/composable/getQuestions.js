@@ -12,9 +12,6 @@ const getQuestions = async () => {
     console.log(error)
   }
   
-  
-  // 
-  // 
 }
 
 // getQuestions()
