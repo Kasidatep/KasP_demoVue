@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import QuestionManagementView from '../components/QuestionManagement.vue'
+import OneQuestionManagement from '../components/OneQuestionManagement.vue'
 import AboutView from '../views/AboutUs.vue'
 import NotFoundView from '../views/NotFound.vue'
+import QuestionView from '../views/QuestionVue.vue'
+
 
 const router = createRouter({
     history: createWebHistory(),
@@ -20,6 +23,17 @@ const router = createRouter({
             path: '/:catchNotMatchPath(.*)',
             name: 'NotFound',
             component: NotFoundView
+        },
+        {
+            path: '/question/:questionId',
+            name: 'OneQuestionManagement',
+            component: OneQuestionManagement
+        }
+        ,
+        {
+            path: '/question/',
+            name: 'QuestionList',
+            component: QuestionView
         }
     ]
 })
